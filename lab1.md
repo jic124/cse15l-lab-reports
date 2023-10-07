@@ -22,7 +22,7 @@
   [user@sahara ~]$ pwd
   /home
   ``` 
-  As shown by the `~` sign and `pwd` command, the working directory is `/home` for this and all other examples for question 1. The command `cd` changes the working directory to an argument; however, there is no change in this situation because no arguments(/directories) are provided to access. Hence, as illustrated by the execution of the second `pwd` command, the present working directory is still `/home` after running the code.
+  As shown by the `~` sign and `pwd` command, the initial working directory is `/home` for this and all other examples for question 1. The command `cd` changes the working directory to an argument; however, there is no change in this situation because no arguments(/directories) are provided to access. Hence, as illustrated by the execution of the second `pwd` command, the present working directory is still `/home` after running the code.
 
 <br>
   
