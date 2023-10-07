@@ -22,7 +22,7 @@
   [user@sahara ~]$ pwd
   /home
   ``` 
-  As shown by the `~` sign and `pwd` command, the working directory is `/home` for this and all other examples for question 1. The command `cd` changes the working directory to an argument, however, there is no change in this situation because there are no arguments(/directories) provided to access. Hence, as illustrated by the execution of the second `pwd` command, the present working directory is still `/home` after running the code. 
+  As shown by the `~` sign and `pwd` command, the working directory is `/home` for this and all other examples for question 1. The command `cd` changes the working directory to an argument; however, there is no change in this situation because no arguments(/directories) are provided to access. Hence, as illustrated by the execution of the second `pwd` command, the present working directory is still `/home` after running the code.
 
 <br>
   
@@ -31,16 +31,21 @@
   [user@sahara ~]$ ls
   lecture1
   ```
-  The command `ls` displays all the directories and files present in the working directory. As the present working directory is `/home`, terminal returns the directories (and files) in the `/home` directory, which is `lecture1`, which you can also confirm from the image above.
+  The command `ls` displays all the directories and files in the working directory. Since the present working directory is `/home`, terminal returns the directories (and files) in the `/home` directory, `lecture1`, which you can also confirm from the image above.
 
 <br>
   
 * cat
   ```
   [user@sahara ~]$ cat
-  read md
+  
+  read me
   read me
   ```
+  The command `cat` views the file. However, without argument, the user does not provide directions for which file to read. Thus, `cat` does not return anything until the user gives a command (or argument). For example, terminal echoed my text input `read me`. 
+
+  <br>
+
 **2. an exmaple of using `cd`, `ls`, `cat` with a path to a *directory* as an argument.**
 * cd
   ```
@@ -50,28 +55,47 @@
   [user@sahara ~/lecture1]$ pwd
   /home/lecture1
   ```
+  Again, as demonstrated by the first `pwd` command and `~` sign, the current directory for this and all other examples for question 2 is `/home`. By running the `cd` command with the path to `lecture1`, a directory as an argument, the command changes the present working directory to `/home/lecture1`, shown by the second `pwd`. 
+
+  <br>
+
 * ls
   ```
   [user@sahara ~]$ ls lecture1/
   Hello.class  Hello.java  messages  README
   ```
+  By using `ls` with the path to `lecture1` as an argument, the command lists all the files and directories in the directory `lecture1`. It is noticeable in the actual code that `messages` is printed in blue with bold to separate it, a directory, from the other files.
+  
+  <br> 
+  
 * cat
   ```
   [user@sahara ~]$ cat lecture1/
   cat: lecture1/: Is a directory
   ```
+  The command `cat` is typically used to view files. So, having a directory, `lecture1`, as a path throws an error message: `cat: lecture1\: Is a directory`. 
+
+  <br>
+  
 **3.  an example of using `cd`, `ls`, `cat` with a path to a *file* as an argument.**
 * cd
   ```
-  [user@sahara ~]$ cd lecture1/
   [user@sahara ~/lecture1]$ cd Hello.java
   bash: cd: Hello.java: Not a directory
   ```
+  The present working directory for all examples in question 3 is `/home/lecture1`, as shown by the `~/lecture1` sign. Command `cd` changes the working directory; therefore, setting the path to a file `Hello.java` throws an error message: `bash: cd: Hello.java: Not a directory`. 
+
+  <br>
+  
 * ls
   ```
   [user@sahara ~/lecture1]$ ls Hello.java
   Hello.java
   ```
+  The only file present in the path to the file `Hello.java` is `Hello.java`, hence the command `ls` returns `Hello.java`.  
+
+  <br>
+  
 * cat
   ```
   [user@sahara ~/lecture1]$ cat Hello.java
@@ -87,5 +111,4 @@
     }
   }
   ```
-
-    
+  The command `cat` is used to view files. Thus, terminal reads the content of the file (from `import java.io.IOException` to `}`)  by having the file `Hello.java` as the path.
