@@ -1,4 +1,11 @@
 # Lab Report 1 - Remote Access and FileSystem
+
+**`cd`** change directory \
+**`ls`** list files \
+**`cat`** view (or create) file
+***
+
+
 **1. an example of using `cd`, `ls`, `cat` with no arguments.**
 * cd
   ```
@@ -7,7 +14,10 @@
   [user@sahara ~]$ cd
   [user@sahara ~]$ pwd
   /home
-  ```
+  ``` 
+  As shown by the `~` sign and `pwd` command, the working directory is *home* for this and all other examples for question 1.
+<br>
+  
 * ls
   ```
   [user@sahara ~]$ ls
