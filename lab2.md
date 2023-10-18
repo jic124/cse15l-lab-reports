@@ -1,7 +1,7 @@
 # Lab Report 2 - Servers and SSH Keys
 
-**Part 1**
-* Code for `StringServer`
+## Part 1
+* **Code for `StringServer`**
   ```
   import java.io.IOException;
   import java.net.URI;
@@ -50,8 +50,10 @@
       }
   }
   ```
-  * Add Hello
-  * Add How are you
+* **Add Hello**
+  ![image](lab2_Hello.png)
+* **Add How are you**
+  ![image](lab2_HowAreYou.png)
 
   ```
   [user@sahara ~]$ pwd
