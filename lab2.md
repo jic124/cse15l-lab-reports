@@ -76,6 +76,6 @@
 <br><br>
 
 ## Part 3
-* **In a couple of sentences, describe something you learned from lab in week 2 or 3 that you didn’t know before.**
+* **In a couple of sentences, describe something you learned from lab in week 2 or 3 that you didn’t know before.** <br>
   By opening a server and programming a simplified search engine in lab 2, I could appreciate the practicality of java. Before I only used java for data structures, so they were mostly sorting arrays and finding paths. I never thought about where I will be using java in real life but now I know it can provide basic functions of a website. It was also intersting how different computers can access a web server at the same time and manipulate the data stored there - like working in a google drive.
 <br><br>
