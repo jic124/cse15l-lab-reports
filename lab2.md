@@ -60,9 +60,9 @@
   
 * **Add How are you**
   ![image](lab2_HowAreYou.png)
-  What each method does is already described above. Note all variables are newly instantiated/resetted except for `count` and `list`; `count` and `list` belongs to the class `Handler`, where as the other variables belong to the method `handleRequest`. Thus, `count` and `list` are resetted when the server is closed while the others reset every time the url is entered.<br><br>
-  After entering `/add-message?s=How are you` after `/add-message?s=Hello`, the methods `.getPath().equals("/")` will be called to check whether the path equals "/". It does not. Next, the methods `.getPath().contains("/add-message")` will be called to check if the path contains "/add-messages". It does. So, `.getQuery().split("=")` is called to store "How are you" to parameters[1].  
-<br>
+  What each method does is already described above. Note all variables are newly instantiated/resetted except for `count` and `list`; `count` and `list` belongs to the class `Handler`, whereas the other variables belong to the method `handleRequest`. Thus, `count` and `list` are resetted when the server is closed while the others reset every time the url is entered.<br><br>
+  After entering `/add-message?s=How are you` after `/add-message?s=Hello`, the methods `.getPath().equals("/")` will be called to check whether the path equals "/". It does not. Next, the methods `.getPath().contains("/add-message")` will be called to check if the path contains "/add-messages". It does. So, count is incremented and `.getQuery().split("=")` is called to store "How are you" to parameters[1]. `count + ". " + parameters[1]`(=2. How are you) is then added to the list by calling `.add(count + ". " + parameters[1])`. <br><br>
+  The list now contains "1. Hello" and "2. How are you". These are appended to the newly instantiated sb2 and returned. <br><br>
 
 ## Part 2
 * **The path to the *private key* for your SSH key for logging into `ieng6`**
@@ -73,7 +73,9 @@
   <br>
 * **A terminal interaction where you log into `ieng6` with your course-specific account without being asked for a password.**
   ![image](lab2_public.png)
-<br>
+<br><br>
 
 ## Part 3
 * **In a couple of sentences, describe something you learned from lab in week 2 or 3 that you didn’t know before.**
+  By opening a server and programming a simplified search engine in lab 2, I could appreciate the practicality of java. Before I only used java for data structures, so they were mostly sorting arrays and finding paths. I never thought about where I will be using java in real life but now I know it can provide basic functions of a website. It was also intersting how different computers can access a web server at the same time and manipulate the data stored there - like working in a google drive.
+<br><br>
