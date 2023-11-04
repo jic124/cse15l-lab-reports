@@ -67,6 +67,7 @@
 ## Part 2
 * **The path to the *private key* for your SSH key for logging into `ieng6`**
   ![image](lab2_private.png)
+  /Users/jinchun/.ssh/id_rsa.pub
   <br>
 * **The path to the *public key* for your SSH key for logging into `ieng6`**
   ![image](lab3_interaction.png)
