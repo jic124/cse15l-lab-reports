@@ -104,7 +104,7 @@ The starting working directory is ```DOCSEARCH```(parent of ```technical```) for
   ```
   Here, the above code searches for the first 3 lines in ```technical/911report/chapter-5.txt``` that includes 'United States'.
   <br><br>
-  As shown by the examples, the ```-m``` option in ```grep``` allows you to access the first few lines of ```grep```. This would be useful in cases where you want the log to be saved/shown in terminal - it is only viewable a single time in ```less```. It is also an advantage that the user can choose the number of lines to fetch. Nonetheless, having a restricted number of matches to return will significantly reduce the processing time given the user is only interested in the first m results; it disregards the unnecessary results.
+  As shown by the examples, the ```-m``` option in ```grep``` allows you to access the first ```num``` matches of ```grep```. This would be useful in cases where you want the log to be saved/shown in terminal - it is only viewable a single time in ```less```. It is also an advantage that the user can choose the number of lines to fetch. Nonetheless, having a restricted number of matches to return will significantly reduce the processing time given the user is only interested in the first ```num``` results; disregarding the unnecessary results.
   
   <br>
 * **grep --color**
@@ -117,7 +117,7 @@ The starting working directory is ```DOCSEARCH```(parent of ```technical```) for
   technical/government/Gen_Account_Office/Testimony_Jul15-2002_d02940t.txt
   ```
   ![image](lab3_color2002.png)
-  The above code searches for the first 3 text files(-m) in ```find-results.txt``` that includes '2002' in their name (or path), case insensitive(-i), and highlights it in a color.
+  The above code searches for the first 3 text files(-m) in ```find-results.txt``` that includes '2002' in their name (or path), case insensitive(-i), and highlights the match in a color.
   <br><br>
   ```
   $ cd technical/911report/
@@ -129,7 +129,7 @@ The starting working directory is ```DOCSEARCH```(parent of ```technical```) for
   ![image](lab3_color911.png)
   Here, the above code searches for the first 3(-m) lines in ```technical/911report/chapter-9.txt``` that includes 'WTC', and highlights in a color.
   <br><br>
-  As shown by the examples, the ```--color``` option in ```grep``` identifies the lines that include a certain text (grep) and highlights the text in the output. This will make it easier for the user to identify where the searched text is in the output.
+  As shown by the examples, the ```--color``` option in ```grep``` identifies the lines that include a certain text (grep) and highlights the matching text in the output. This will make it easier for the user to identify where the searched text is in the output.
   
   <br>
 * **grep -A**
@@ -149,7 +149,7 @@ The starting working directory is ```DOCSEARCH```(parent of ```technical```) for
   technical/government/Media/Wingates_winds.txt
   technical/government/Media/Avoids_Budget_Cut.txt
   ```
-  The above code searches for the first 3 results(-m) of ```grep```. ```grep``` searches for the text files that includes 'lawyer' in their name (or path), case insensitive(-i), and the ```-A``` option prints 2 lines trailing after the ```grep``` match. For instance, for the first match, ```technical/government/Media/Too_Crucial_to_Take_Cut.txt``` and ```technical/government/Media/Pro_Bono_Services.txt``` are the 2 lines after the match ```technical/government/Media/Philly_Lawyers.txt```.
+  The above code searches for the first 3 results(-m) of ```grep```. ```grep``` searches for the text files in ```find-results.txt``` that includes 'lawyer' in their name (or path), case insensitive(-i), and the ```-A``` option prints 2 lines trailing after the ```grep``` match. For instance, for the first match, ```technical/government/Media/Too_Crucial_to_Take_Cut.txt``` and ```technical/government/Media/Pro_Bono_Services.txt``` are the 2 lines after the match ```technical/government/Media/Philly_Lawyers.txt```.
   <br><br>
   ```
   $ cd technical/911report/
@@ -166,7 +166,7 @@ The starting working directory is ```DOCSEARCH```(parent of ```technical```) for
   Here, the above code searches for the first 2(-m) lines in ```technical/911report/chapter-11.txt``` that includes 'africa', case insensitive(-i), and highlights it in a color. The ```-A``` 2 option prints the 2 lines following each ```-grep``` match.
   <br><br>
   As shown by the examples, the ```-A``` command prints the ```num``` trailing lines after each match. This would be useful when the user wants to know the context of the output (particularly relevant for text files similar to the second example.)
-  Along with the ```-A``` option, there are ```-B``` and ```-C``` that also helps the user to understand the content more easily; ```-B``` prints the ```num``` of lines before the match and ```-C``` prints the ```num``` of lines before and after the match (-A + -B).
+  Along with the ```-A``` option, there are ```-B``` and ```-C``` options that also helps the user to understand the context of the match more easily; ```-B``` prints the ```num``` of lines before the match and ```-C``` prints the ```num``` of lines before and after the match (-A + -B).
 
   <br>
 * **grep -c**
@@ -184,6 +184,6 @@ The starting working directory is ```DOCSEARCH```(parent of ```technical```) for
   ```
   The above code counts the number of .txt files that includes the name 'report' in its name (or path) in ```find-results.txt```. 
   <br><br>
-  As shown by the examples, the ```-c``` command makes the process of counting number of lines more efficient than having to use ```grep``` then ```wc```. For the example, the same result was obtained in the lab by ```grep ".txt" find-results.txt > grep-results.txt```, ```wc grep-results.txt```, which are 2 lines. Using the ```-c``` option, this can be done within grep - a single line.
+  As shown by the examples, the ```-c``` command makes the process of counting number of lines more efficiently than having to use ```grep``` then ```wc```. For the first example, the same result was obtained in the lab by ```grep ".txt" find-results.txt > grep-results.txt```, ```wc grep-results.txt```, which are 2 lines. Using the ```-c``` option, this can be done within grep - a single line.
   
 <br><br>
