@@ -50,6 +50,7 @@
     assertArrayEquals(new int[]{ }, ArrayExamples.reversed(input1));
   }
   ```
+  ![image](lab3_add.png)
   
   <br>
 * **The symptom, as the output of running the tests**
@@ -82,9 +83,9 @@
 The file ```find-results.txt``` is created by the command ```find technical -name "*.txt" > find-results.txt``` in terminal for demonstration. <br>
 The starting working directory is ```DOCSEARCH```(parent of ```technical```) for all examples.*
 <br>
-* **grep -m num**
+* **```grep -m num```**
   <br>
-  --max-count=num: Stop reading the file after num matches.
+  ```--max-count=num```: Stop reading the file after num matches.
   ```
   $ grep -im 5 legal find-results.txt
   technical/government/About_LSC/LegalServCorp_v_VelazquezSyllabus.txt
@@ -107,7 +108,7 @@ The starting working directory is ```DOCSEARCH```(parent of ```technical```) for
   As shown by the examples, the ```-m``` option in ```grep``` allows you to access the first ```num``` matches of ```grep```. This would be useful in cases where you want the log to be saved/shown in terminal - it is only viewable a single time in ```less```. It is also an advantage that the user can choose the number of lines to fetch. Nonetheless, having a restricted number of matches to return will significantly reduce the processing time given the user is only interested in the first ```num``` results; disregarding the unnecessary results.
   
   <br>
-* **grep --color**
+* **```grep --color```**
   <br>
   Mark up the matching text with the expression stored in the GREP_COLOR environment variable. 
   ```
@@ -132,9 +133,9 @@ The starting working directory is ```DOCSEARCH```(parent of ```technical```) for
   As shown by the examples, the ```--color``` option in ```grep``` identifies the lines that include a certain text (grep) and highlights the matching text in the output. This will make it easier for the user to identify where the searched text is in the output.
   
   <br>
-* **grep -A**
+* **```grep -A```**
   <br>
-  --after-context=num: Print num lines of trailing context after each match.
+  ```--after-context=num```: Print num lines of trailing context after each match.
   ```
   $ grep -im 3 -A 2 lawyer find-results.txt
   technical/government/Media/Philly_Lawyers.txt
@@ -171,7 +172,7 @@ The starting working directory is ```DOCSEARCH```(parent of ```technical```) for
   <br>
 * **grep -c**
   <br>
-  --count: Only a count of selected lines is written to standard output.
+  ```--count```: Only a count of selected lines is written to standard output.
   ```
   $ grep -c .txt find-results.txt
   1391
