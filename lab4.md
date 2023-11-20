@@ -16,7 +16,7 @@
   ![image](lab4_5.png)
 
 * **Run the tests, demonstrating that they now succeed**
-  ![image](lab4_5.png)
+  ![image](lab4_6.png)
   
 * **Commit and push the resulting change to your Github account**
-  ![image](lab4_6.png)
+  ![image](lab4_7.png)
