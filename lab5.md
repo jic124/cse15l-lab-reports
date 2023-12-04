@@ -48,11 +48,9 @@ public class lab5 {
 ```
 <br><br>
 **testLab5.java**
-<br><br>
 ```
 import static org.junit.Assert.*;
 import org.junit.*;
-
 
 public class testLab5 {
 	@Test
