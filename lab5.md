@@ -4,7 +4,7 @@
 * **Original post from student**
 <br><br>
 ![image](lab5_symptom.png)
-My code to rotate arrays (shifts an array by integer numbers) doesn't work for numbers greater than or equal to the length. My codes for the algorithm and tests are as follows:
+My code to rotate arrays (shifts an array by integer numbers) doesn't work for numbers greater than or less than the length. I get different answers as the symptom. My codes for the algorithm and tests are as follows:
 <br>![image](lab5_code.png)<br>![image](lab5_test.png)
 <br><br>
 
@@ -14,7 +14,7 @@ Try to revisit the logic for your ```steps```.
 <br><br>
 * **Student's fix**
 <br><br>
-I have changed ```steps = length % steps;``` to ```steps = steps % length;```. The algorithm was shifting the arrays by the wrong index.
+I have changed ```steps = length % steps;``` to ```steps = steps % length;```. The buggy algorithm was shifting the arrays by the wrong index.
 The tests work now. Thank you!
 <br>![image](lab5_fixed.png)
 <br><br>
